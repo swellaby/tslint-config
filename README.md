@@ -1,2 +1,2 @@
-# tslint-configs
-Our tslint configurations
+# tslint-config
+Module that contains our tslint configuration files.

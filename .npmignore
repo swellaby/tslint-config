@@ -1,0 +1,7 @@
+.testresults/
+.github/
+.vscode/
+test/
+.eslintignore
+.eslintrc.js
+.gitignore
