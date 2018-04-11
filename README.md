@@ -1,2 +1,2 @@
-# tslint-config
+# tslint-configs
 Our tslint configurations
