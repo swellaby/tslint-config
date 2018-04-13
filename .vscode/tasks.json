@@ -1,0 +1,41 @@
+{
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "runner": "terminal",
+    "tasks": [
+        {
+            "taskName": "install deps",
+            "suppressTaskName": true,
+            "args": [
+                "npm",
+                "install"
+            ]
+        },
+        {
+            "taskName": "build",
+            "suppressTaskName": true,
+            "args": [
+                "npm",
+                "run",
+                "build"
+            ]
+        },
+        {
+            "taskName": "lint",
+            "suppressTaskName": true,
+            "args": [
+                "npm",
+                "run",
+                "lint"
+            ]
+        },
+        {
+            "taskName": "test",
+            "suppressTaskName": true,
+            "args": [
+                "npm",
+                "test"
+            ]
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 .testresults/
 .github/
+docs/
 .vscode/
 test/
 .eslintignore
