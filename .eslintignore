@@ -1,4 +1,5 @@
-.testresults
-.vscode
-.github
+.testresults/
+.vscode/
+.github/
+docs/
 node_modules/
