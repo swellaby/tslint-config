@@ -44,7 +44,7 @@ MIT - see license details [here][license-url]
 
 [tslint-url]: https://palantir.github.io/tslint/
 [tslint-config-url]: https://palantir.github.io/tslint/usage/configuration/
-[npmjs-version-badge]: https://img.shields.io/npm/v/@swellaby/tslint-config-all.svg
+[npmjs-version-badge]: https://img.shields.io/npm/v/@swellaby/tslint-config.svg
 [npmjs-pkg-url]: https://www.npmjs.com/package/@swellaby/tslint-config
 [license-url]: https://github.com/swellaby/tslint-config/blob/master/LICENSE
 [license-badge]: https://img.shields.io/github/license/swellaby/tslint-config.svg
