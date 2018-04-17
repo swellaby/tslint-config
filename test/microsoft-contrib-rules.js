@@ -48,8 +48,8 @@ suite('microsoft-contrib-rules Suite:', () => {
         assert.isTrue(rules['mocha-unneeded-done']);
     });
 
-    test('Should enable no-backbone-get-set-outside-model rule', () => {
-        assert.isTrue(rules['no-backbone-get-set-outside-model']);
+    test('Should not enable no-backbone-get-set-outside-model rule', () => {
+        assert.isUndefined(rules['no-backbone-get-set-outside-model']);
     });
 
     test('Should enable no-banned-terms rule', () => {
