@@ -4,7 +4,7 @@
     "runner": "terminal",
     "tasks": [
         {
-            "taskName": "install deps",
+            "taskName": "install",
             "suppressTaskName": true,
             "args": [
                 "npm",
@@ -35,6 +35,24 @@
             "args": [
                 "npm",
                 "test"
+            ]
+        },
+        {
+            "taskName": "setup dev env",
+            "suppressTaskName": true,
+            "args": [
+                "npm",
+                "run",
+                "dev:setup"
+            ]
+        },
+        {
+            "taskName": "reset dev env",
+            "suppressTaskName": true,
+            "args": [
+                "npm",
+                "run",
+                "dev:reset"
             ]
         }
     ]

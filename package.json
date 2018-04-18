@@ -24,7 +24,7 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@swellaby/eslint-config-recommended": "^0.0.15",
+        "@swellaby/eslint-config-node": "^0.0.4",
         "chai": "^4.1.2",
         "eslint": "^4.19.1",
         "mocha": "^5.1.0",
