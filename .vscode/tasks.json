@@ -45,15 +45,6 @@
                 "run",
                 "dev:setup"
             ]
-        },
-        {
-            "taskName": "reset dev env",
-            "suppressTaskName": true,
-            "args": [
-                "npm",
-                "run",
-                "dev:reset"
-            ]
         }
     ]
 }

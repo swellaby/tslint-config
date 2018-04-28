@@ -1,7 +1,8 @@
 .testresults/
+.circleci/
+.vscode/
 .github/
 docs/
-.vscode/
 test/
 .eslintignore
 .eslintrc.js

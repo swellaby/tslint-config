@@ -1,7 +1,8 @@
 {
     "name": "@swellaby/tslint-config",
-    "version": "0.0.5",
-    "description": "Our tslint configuration modules",
+    "version": "0.0.6",
+    "description": "Our tslint configurations",
+    "license": "MIT",
     "main": "lib/index.js",
     "author": {
         "name": "Swellaby",
@@ -22,26 +23,33 @@
         "type": "git",
         "url": "https://github.com/swellaby/tslint-config.git"
     },
-    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/swellaby/tslint-config/issues",
+        "email": "opensource@swellaby.com"
+    },
+    "homepage": "https://github.com/swellaby/tslint-config/blob/master/README.md",
     "devDependencies": {
-        "@swellaby/eslint-config": "0.0.3",
+        "@swellaby/eslint-config": "1.1.1",
         "chai": "^4.1.2",
         "eslint": "^4.19.1",
         "mocha": "^5.1.1",
         "mocha-multi": "^1.0.1",
-        "ncp": "^2.0.0",
         "rimraf": "^2.6.2"
     },
     "dependencies": {
         "tslint-eslint-rules": "^5.1.0",
         "tslint-microsoft-contrib": "^5.0.3"
     },
+    "peerDependencies": {
+        "tslint": ">=4.0.0"
+    },
     "scripts": {
-        "build": "npm run lint && npm run test",
+        "build": "npm run lint && npm test",
         "lint": "eslint **/*.js",
         "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
-        "version:bump": "npm --no-git-tag-version version patch",
-        "publish:local": "npm run version:bump && npm publish --access public",
+        "version:tagless": "npm --no-git-tag-version version patch",
+        "prepublish:local": "npm run build && npm run version:tagless",
+        "publish:local": "npm publish --access public",
         "dev:setup": "npm i && npm run build",
         "dev:reset": "rimraf .testresults/ && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup"
     }

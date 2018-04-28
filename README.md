@@ -1,6 +1,6 @@
 # tslint-config
+[![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url] [![license Badge][license-badge]][license-url]  
 Module that contains our [tslint][tslint-url] configurations.  
-[![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url] [![license Badge][license-badge]][license-url]
 
 ## Installation
 Install the tslint-config module as a dev dependency:
@@ -37,7 +37,7 @@ Our default module configuration includes our rule config from the base TSLint r
 * [TSLint ESLint Rule Configuration][tslint-msft-contrib-doc]
 
 ## Contributing
-See our [Contributing Guidelines][contributing-doc]
+See our [Contributing Guidelines][contributing-doc] for more information about contributing, building, etc.
 
 ## License
 MIT - see license details [here][license-url]
@@ -49,7 +49,7 @@ MIT - see license details [here][license-url]
 [license-url]: https://github.com/swellaby/tslint-config/blob/master/LICENSE
 [license-badge]: https://img.shields.io/github/license/swellaby/tslint-config.svg
 [tslint-eslint-rules-url]: https://www.npmjs.com/package/tslint-eslint-rules
-[tslint-msft-contrib-rules-url]: https://github.com/Microsoft/tslint-microsoft-contrib
+[tslint-msft-contrib-rules-url]: https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules
 [tslint-base-doc]: docs/TSLINT_BASE_RULES.md
 [tslint-eslint-doc]: docs/TSLINT_ESLINT_RULES.md
 [tslint-msft-contrib-doc]: docs/TSLINT_MICROSOFT_CONTRIB_RULES.md

@@ -1,5 +1,6 @@
 .testresults/
 .vscode/
 .github/
+.circleci/
 docs/
 node_modules/
