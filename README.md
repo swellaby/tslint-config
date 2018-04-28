@@ -1,5 +1,7 @@
 # tslint-config
-[![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url] [![license Badge][license-badge]][license-url]  
+[![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url]
+[![Circle CI Badge][circle-ci-badge]][circle-ci-url]
+[![license Badge][license-badge]][license-url]  
 Module that contains our [tslint][tslint-url] configurations.  
 
 ## Installation
@@ -48,6 +50,8 @@ MIT - see license details [here][license-url]
 [npmjs-pkg-url]: https://www.npmjs.com/package/@swellaby/tslint-config
 [license-url]: https://github.com/swellaby/tslint-config/blob/master/LICENSE
 [license-badge]: https://img.shields.io/github/license/swellaby/tslint-config.svg
+[circle-ci-badge]: https://circleci.com/gh/swellaby/tslint-config.svg?style=shield
+[circle-ci-url]: https://circleci.com/gh/swellaby/tslint-config
 [tslint-eslint-rules-url]: https://www.npmjs.com/package/tslint-eslint-rules
 [tslint-msft-contrib-rules-url]: https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules
 [tslint-base-doc]: docs/TSLINT_BASE_RULES.md
