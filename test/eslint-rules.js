@@ -5,12 +5,9 @@ const config = require('../lib/eslint-rules');
 const rules = config.rules;
 
 suite('eslint-rules Suite:', () => {
-    test('Should not extend any other configs', () => {
-        assert.isUndefined(config.extends);
-    });
-
-    test('Should provide the correct rule directory', () => {
-        assert.deepEqual(config.rulesDirectory, 'tslint-eslint-rules');
+    test('Should extend the tslint-eslint-rules config', () => {
+        assert.deepEqual(config.extends.length, 1);
+        assert.deepEqual(config.extends, [ 'tslint-eslint-rules' ]);
     });
 
     test('Should disable array-bracket-spacing rule', () => {
