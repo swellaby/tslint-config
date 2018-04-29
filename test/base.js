@@ -67,6 +67,12 @@ suite('base Suite:', () => {
         assert.deepEqual(indentRule[1], 'spaces');
     });
 
+    test('Should correctly configure interface-name rule', () => {
+        const interfaceNameRule = rules['interface-name'];
+        assert.isTrue(interfaceNameRule[0]);
+        assert.deepEqual(interfaceNameRule[1], 'always-prefix');
+    });
+
     test('Should enable interface-over-type-literal rule', () => {
         assert.isTrue(rules['interface-over-type-literal']);
     });
