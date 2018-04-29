@@ -61,6 +61,12 @@ suite('base Suite:', () => {
         assert.isTrue(rules['import-spacing']);
     });
 
+    test('Should correctly configure indent rule', () => {
+        const indentRule = rules.indent;
+        assert.isTrue(indentRule[0]);
+        assert.deepEqual(indentRule[1], 'spaces');
+    });
+
     test('Should enable interface-over-type-literal rule', () => {
         assert.isTrue(rules['interface-over-type-literal']);
     });
