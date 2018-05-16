@@ -19,6 +19,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure align rule', () => {
         const alignRule = rules.align;
+        assert.deepEqual(alignRule.length, 6);
         assert.isTrue(alignRule[0]);
         assert.isTrue(alignRule.includes('arguments'));
         assert.isTrue(alignRule.includes('elements'));
@@ -49,6 +50,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure cyclomatic-complexity rule', () => {
         const complexityRule = rules['cyclomatic-complexity'];
+        assert.deepEqual(complexityRule.length, 2);
         assert.isTrue(complexityRule[0]);
         assert.deepEqual(complexityRule[1], 10);
     });
@@ -63,12 +65,14 @@ suite('base Suite:', () => {
 
     test('Should correctly configure indent rule', () => {
         const indentRule = rules.indent;
+        assert.deepEqual(indentRule.length, 2);
         assert.isTrue(indentRule[0]);
         assert.deepEqual(indentRule[1], 'spaces');
     });
 
     test('Should correctly configure interface-name rule', () => {
         const interfaceNameRule = rules['interface-name'];
+        assert.deepEqual(interfaceNameRule.length, 2);
         assert.isTrue(interfaceNameRule[0]);
         assert.deepEqual(interfaceNameRule[1], 'always-prefix');
     });
@@ -87,12 +91,14 @@ suite('base Suite:', () => {
 
     test('Should correctly configure max-classes-per-file rule', () => {
         const maxClassesRule = rules['max-classes-per-file'];
+        assert.deepEqual(maxClassesRule.length, 2);
         assert.isTrue(maxClassesRule[0]);
         assert.deepEqual(maxClassesRule[1], 1);
     });
 
     test('Should correctly max-line-length rule', () => {
         const maxLengthRule = rules['max-line-length'];
+        assert.deepEqual(maxLengthRule.length, 2);
         assert.isTrue(maxLengthRule[0]);
         assert.deepEqual(maxLengthRule[1], 180);
     });
@@ -143,6 +149,10 @@ suite('base Suite:', () => {
 
     test('Should enable no-duplicate-variable rule', () => {
         assert.isTrue(rules['no-duplicate-variable']);
+    });
+
+    test('Should enable no-empty rule', () => {
+        assert.isTrue(rules['no-empty']);
     });
 
     test('Should enable no-eval rule', () => {
@@ -202,6 +212,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure object-literal-key-quotes rule', () => {
         const keyQuotesRule = rules['object-literal-key-quotes'];
+        assert.deepEqual(keyQuotesRule.length, 2);
         assert.isFalse(keyQuotesRule[0]);
         assert.deepEqual(keyQuotesRule[1], 'as-needed');
     });
@@ -212,6 +223,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure one-line rule', () => {
         const oneLineRule = rules['one-line'];
+        assert.deepEqual(oneLineRule.length, 6);
         assert.isTrue(oneLineRule[0]);
         assert.isTrue(oneLineRule.includes('check-catch'));
         assert.isTrue(oneLineRule.includes('check-else'));
@@ -222,6 +234,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure one-variable-per-declaration rule', () => {
         const oneVariableRule = rules['one-variable-per-declaration'];
+        assert.deepEqual(oneVariableRule.length, 2);
         assert.isTrue(oneVariableRule[0]);
         assert.isTrue(oneVariableRule.includes('ignore-for-loop'));
     });
@@ -236,6 +249,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure quotemark rule', () => {
         const quotemarkRule = rules.quotemark;
+        assert.deepEqual(quotemarkRule.length, 2);
         assert.isTrue(quotemarkRule[0]);
         assert.deepEqual(quotemarkRule[1], 'single');
     });
@@ -246,12 +260,14 @@ suite('base Suite:', () => {
 
     test('Should correctly configure semicolon rule', () => {
         const semicolonRule = rules.semicolon;
+        assert.deepEqual(semicolonRule.length, 2);
         assert.isTrue(semicolonRule[0]);
         assert.isTrue(semicolonRule.includes('ignore-bound-class-methods'));
     });
 
     test('Should correctly configure trailing-comma rule', () => {
         const trailingCommaRule = rules['trailing-comma'];
+        assert.deepEqual(trailingCommaRule.length, 2);
         assert.isTrue(trailingCommaRule[0]);
         assert.deepEqual(trailingCommaRule[1].singleline, 'never');
         assert.deepEqual(trailingCommaRule[1].multiline, 'never');
@@ -259,6 +275,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure triple-equals rule', () => {
         const tripleEqRule = rules['triple-equals'];
+        assert.deepEqual(tripleEqRule.length, 3);
         assert.isTrue(tripleEqRule[0]);
         assert.isTrue(tripleEqRule.includes('allow-null-check'));
         assert.isTrue(tripleEqRule.includes('allow-undefined-check'));
@@ -266,6 +283,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure typedef rule', () => {
         const typedefRule = rules.typedef;
+        assert.deepEqual(typedefRule.length, 4);
         assert.isTrue(typedefRule[0]);
         assert.isTrue(typedefRule.includes('parameter'));
         assert.isTrue(typedefRule.includes('property-declaration'));
@@ -274,8 +292,11 @@ suite('base Suite:', () => {
 
     test('Should correctly configure variable-name rule', () => {
         const varNameRule = rules['variable-name'];
+        assert.deepEqual(varNameRule.length, 4);
         assert.isTrue(varNameRule[0]);
         assert.isTrue(varNameRule.includes('check-format'));
+        assert.isTrue(varNameRule.includes('ban-keywords'));
+        assert.isTrue(varNameRule.includes('allow-leading-underscore'));
     });
 
     test('Should enable unified-signatures rule', () => {
@@ -288,6 +309,7 @@ suite('base Suite:', () => {
 
     test('Should correctly configure whitespace rule', () => {
         const whitespaceRule = rules.whitespace;
+        assert.deepEqual(whitespaceRule.length, 8);
         assert.isTrue(whitespaceRule[0]);
         assert.isTrue(whitespaceRule.includes('check-branch'));
         assert.isTrue(whitespaceRule.includes('check-decl'));

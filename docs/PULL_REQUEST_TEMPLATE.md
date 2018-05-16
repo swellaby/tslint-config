@@ -7,10 +7,12 @@ This PR:
 - [ ] Includes a net-new Rule Set
 
 ### Issues Completed
-<<Delete this section if there's no corresponding issues closed/completed in this PR>>
 - Closes #
 
-## Details
-<<Enter any specific details here if you are changing rule config, add/removing rules, including why, etc.>>
+## Rule Modification Details
+| Rule Name | Rule Set | Change Type | Explanation |
+|-----------|----------|-------------|-------------|
+| [no-empty](https://palantir.github.io/tslint/rules/no-empty/) | base | new | adding new rule sample because it is awesome |
+| chai-vague-errors | microsoft-contrib | modify | changing this because foo |
 
 CC - @calebcartwright @beverts312 @traviskosarek
