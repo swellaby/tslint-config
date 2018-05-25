@@ -1,5 +1,6 @@
 # tslint-config
-[![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url]
+[![npmjs Version Badge][npmjs-version-badge]][npmjs-pkg-url]
+[![npmjs Downloads Badge][npmjs-downloads-badge]][npmjs-pkg-url]
 [![Circle CI Badge][circle-ci-badge]][circle-ci-url]
 [![license Badge][license-badge]][license-url]  
 Module that contains our [tslint][tslint-url] configurations.  
@@ -48,6 +49,7 @@ MIT - see license details [here][license-url]
 [tslint-config-url]: https://palantir.github.io/tslint/usage/configuration/
 [npmjs-version-badge]: https://img.shields.io/npm/v/@swellaby/tslint-config.svg
 [npmjs-pkg-url]: https://www.npmjs.com/package/@swellaby/tslint-config
+[npmjs-downloads-badge]: https://img.shields.io/npm/dt/@swellaby/tslint-config.svg
 [license-url]: https://github.com/swellaby/tslint-config/blob/master/LICENSE
 [license-badge]: https://img.shields.io/github/license/swellaby/tslint-config.svg
 [circle-ci-badge]: https://circleci.com/gh/swellaby/tslint-config.svg?style=shield
