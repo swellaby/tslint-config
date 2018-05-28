@@ -56,7 +56,7 @@ MIT - see license details [here][license-url]
 [circle-ci-url]: https://circleci.com/gh/swellaby/tslint-config
 [tslint-eslint-rules-url]: https://www.npmjs.com/package/tslint-eslint-rules
 [tslint-msft-contrib-rules-url]: https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules
-[tslint-base-doc]: ./docs/TSLINT_BASE_RULES.md
-[tslint-eslint-doc]: ./docs/TSLINT_ESLINT_RULES.md
-[tslint-msft-contrib-doc]: ./docs/TSLINT_MICROSOFT_CONTRIB_RULES.md
-[contributing-doc]: ./docs/CONTRIBUTING.md
+[tslint-base-doc]: https://github.com/swellaby/tslint-config/blob/master/docs/TSLINT_BASE_RULES.md
+[tslint-eslint-doc]: https://github.com/swellaby/tslint-config/blob/master/docs/TSLINT_ESLINT_RULES.md
+[tslint-msft-contrib-doc]: https://github.com/swellaby/tslint-config/blob/master/docs/TSLINT_MICROSOFT_CONTRIB_RULES.md
+[contributing-doc]: https://github.com/swellaby/tslint-config/blob/master/docs/CONTRIBUTING.md
