@@ -46,6 +46,7 @@ This [tslint][tslint-url] configuration module defines the below configuration f
     "no-duplicate-imports": true,
     "no-duplicate-super": true,
     "no-duplicate-variable": true,
+    "no-empty": true,
     "no-eval": true,
     "no-floating-promises": true,
     "no-invalid-this": true,
@@ -108,7 +109,9 @@ This [tslint][tslint-url] configuration module defines the below configuration f
     ],
     "variable-name": [
         true,
-        "check-format"
+        "check-format",
+        "ban-keywords",
+        "allow-leading-underscore"
     ],
     "unified-signatures": true,
     "use-isnan": true,
