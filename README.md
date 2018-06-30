@@ -1,9 +1,10 @@
 # tslint-config
+Module that contains our [tslint][tslint-url] configurations.  
+
 [![npmjs Version Badge][npmjs-version-badge]][npmjs-pkg-url]
 [![npmjs Downloads Badge][npmjs-downloads-badge]][npmjs-pkg-url]
 [![Circle CI Badge][circle-ci-badge]][circle-ci-url]
 [![license Badge][license-badge]][license-url]  
-Module that contains our [tslint][tslint-url] configurations.  
 
 ## Installation
 Install the tslint-config module as a dev dependency:
