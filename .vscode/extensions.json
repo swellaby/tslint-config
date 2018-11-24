@@ -1,6 +1,11 @@
 {
     "recommendations": [
         "dbaeumer.vscode-eslint",
-        "GuardRex.status-bar-tasks"
+        "GuardRex.status-bar-tasks",
+        "christian-kohler.path-intellisense",
+        "christian-kohler.npm-intellisense",
+        "eamodio.gitlens",
+        "pflannery.vscode-versionlens",
+        "hbenl.vscode-mocha-test-adapter"
     ]
 }

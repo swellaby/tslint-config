@@ -1,61 +1,61 @@
 {
-    "name": "@swellaby/tslint-config",
-    "version": "1.1.5",
-    "description": "Our tslint configurations",
-    "license": "MIT",
-    "main": "lib/index.js",
-    "author": {
-        "name": "Swellaby",
-        "email": "opensource@swellaby.com",
-        "url": "http://swellaby.com"
+  "name": "@swellaby/tslint-config",
+  "version": "1.1.5",
+  "description": "Our tslint configurations",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "author": {
+    "name": "Swellaby",
+    "email": "opensource@swellaby.com",
+    "url": "http://swellaby.com"
+  },
+  "keywords": [
+    "tslint",
+    "tslint-config",
+    "tslint config"
+  ],
+  "contributors": [
+    {
+      "name": "Caleb Cartwright",
+      "url": "https://github.com/calebcartwright"
     },
-    "keywords": [
-        "tslint",
-        "tslint-config",
-        "tslint config"
-    ],
-    "contributors": [
-        {
-            "name": "Caleb Cartwright",
-            "url": "https://github.com/calebcartwright"
-        },
-        {
-            "name": "Bailey Everts",
-            "url": "https://github.com/beverts312"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/swellaby/tslint-config.git"
-    },
-    "bugs": {
-        "url": "https://github.com/swellaby/tslint-config/issues",
-        "email": "opensource@swellaby.com"
-    },
-    "homepage": "https://github.com/swellaby/tslint-config/blob/master/README.md",
-    "devDependencies": {
-        "@swellaby/eslint-config": "^1.1.6",
-        "chai": "^4.1.2",
-        "eslint": "^5.2.0",
-        "mocha": "^5.2.0",
-        "mocha-multi": "^1.0.1",
-        "rimraf": "^2.6.2"
-    },
-    "dependencies": {
-        "tslint-eslint-rules": "^5.3.1",
-        "tslint-microsoft-contrib": "^5.1.0"
-    },
-    "peerDependencies": {
-        "tslint": ">=4.0.0"
-    },
-    "scripts": {
-        "build": "npm run lint && npm test",
-        "lint": "eslint **/*.js",
-        "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
-        "version:tagless": "npm --no-git-tag-version version patch",
-        "prepublish:local": "npm run build && npm run version:tagless",
-        "publish:local": "npm publish --access public",
-        "dev:setup": "npm i && npm run build",
-        "dev:reset": "rimraf .testresults/ && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup"
+    {
+      "name": "Bailey Everts",
+      "url": "https://github.com/beverts312"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swellaby/tslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swellaby/tslint-config/issues",
+    "email": "opensource@swellaby.com"
+  },
+  "homepage": "https://github.com/swellaby/tslint-config/",
+  "devDependencies": {
+    "@swellaby/eslint-config": "^1.1.6",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0",
+    "mocha-multi": "^1.0.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-microsoft-contrib": "^5.2.1"
+  },
+  "peerDependencies": {
+    "tslint": ">=4.0.0"
+  },
+  "scripts": {
+    "build": "npm run lint && npm test",
+    "lint": "eslint **/*.js",
+    "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
+    "version:tagless": "npm --no-git-tag-version version patch",
+    "prepublish:local": "npm run build && npm run version:tagless",
+    "publish:local": "npm publish --access public",
+    "dev:setup": "npm i && npm run build",
+    "dev:reset": "rimraf .testresults/ && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup"
+  }
 }

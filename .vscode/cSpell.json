@@ -1,0 +1,18 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "cyclomatic",
+    "isnan",
+    "preblock",
+    "opensource",
+    "quotemark",
+    "singleline",
+    "swellaby",
+    "tagless",
+    "testresults"
+  ],
+  "flagWords": [
+
+  ]
+}

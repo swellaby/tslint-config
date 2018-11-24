@@ -202,10 +202,6 @@ suite('base Suite:', () => {
         assert.isTrue(rules['no-unused-expression']);
     });
 
-    test('Should enable no-unused-variable rule', () => {
-        assert.isTrue(rules['no-unused-variable']);
-    });
-
     test('Should enable no-var-keyword rule', () => {
         assert.isTrue(rules['no-var-keyword']);
     });

@@ -4,6 +4,9 @@
 .github/
 docs/
 test/
+.editorconfig
 .eslintignore
 .eslintrc.js
 .gitignore
+.gitattributes
+renovate.json

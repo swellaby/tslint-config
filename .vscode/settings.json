@@ -5,6 +5,23 @@
         "**/*.tgz": true,
         "**/*.tar*": true,
         "**/.testresults/": true,
-        "*/**/LICENSE": true
-    }
+    },
+    "cSpell.enabled": true,
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "javascript",
+        "json",
+        "markdown",
+        "plaintext",
+        "text",
+    ],
+    "cSpell.dictionaries": [
+      "companies",
+      "en_us",
+      "filetypes",
+      "misc",
+      "node",
+      "npm",
+      "softwareTerms"
+    ]
 }
