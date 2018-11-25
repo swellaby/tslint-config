@@ -5,12 +5,18 @@
     "cyclomatic",
     "isnan",
     "preblock",
+    "msft",
+    "npmjs",
     "opensource",
+    "pretarget",
     "quotemark",
+    "ruleset",
+    "rulesets",
     "singleline",
     "swellaby",
     "tagless",
-    "testresults"
+    "testresults",
+    "xunit"
   ],
   "flagWords": [
 

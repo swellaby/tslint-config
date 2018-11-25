@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const base = require('../lib/base');
+const base = require('../../lib/base');
 const rules = base.rules;
 
 suite('base Suite:', () => {

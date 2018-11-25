@@ -1,9 +1,12 @@
 {
   "name": "@swellaby/tslint-config",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "Our tslint configurations",
   "license": "MIT",
   "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "Swellaby",
     "email": "opensource@swellaby.com",
@@ -51,11 +54,20 @@
   "scripts": {
     "build": "npm run lint && npm test",
     "lint": "eslint **/*.js",
-    "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
+    "pretest": "rimraf .testresults/unit",
+    "test": "mocha --opts test/unit/mocha.opts",
     "version:tagless": "npm --no-git-tag-version version patch",
     "prepublish:local": "npm run build && npm run version:tagless",
-    "publish:local": "npm publish --access public",
+    "publish:local": "npm publish",
+    "clean:testresults": "rimraf .testresults/",
+    "clean:deps": "npm run clean:deps:tests && npm run clean:deps:root",
+    "clean:deps:root": "node -e \"require('rimraf').sync('node_modules');\"",
+    "clean:deps:tests": "node -e \"require('rimraf').sync('./test/functional/fixtures/node_modules');\"",
+    "clean": "npm run clean:testresults && npm run clean:deps",
+    "dev:reset": "npm run clean && npm run dev:setup",
     "dev:setup": "npm i && npm run build",
-    "dev:reset": "rimraf .testresults/ && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup"
+    "test:functional:setup": "cd test/functional/fixtures && npm i",
+    "pretest:functional": "rimraf .testresults/functional",
+    "test:functional": "mocha --opts test/functional/mocha.opts"
   }
 }

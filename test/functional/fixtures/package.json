@@ -1,0 +1,29 @@
+{
+  "name": "functional-tests",
+  "version": "0.0.0",
+  "description": "Functional tests for tslint configurations",
+  "license": "MIT",
+  "author": {
+    "name": "Swellaby",
+    "email": "opensource@swellaby.com",
+    "url": "http://swellaby.com"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.3",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swellaby/tslint-config.git"
+  },
+  "scripts": {
+    "tslint": "tslint -p tsconfig.json -c tslint.json -t stylish",
+    "target:remove": "npm r @swellaby/tslint-config",
+    "pretarget:install:latest": "npm run target:remove",
+    "target:install:latest": "npm i --no-save @swellaby/tslint-config",
+    "pretarget:install": "npm run target:remove",
+    "target:install": "npm i --no-save"
+  },
+  "dependencies": {}
+}

@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const config = require('../lib/eslint-rules');
+const config = require('../../lib/eslint-rules');
 const rules = config.rules;
 
 suite('eslint-rules Suite:', () => {

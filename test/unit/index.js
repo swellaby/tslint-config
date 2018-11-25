@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const config = require('..');
+const config = require('../../lib');
 
 suite('index Suite:', () => {
     test('Should extend the correct configurations', () => {

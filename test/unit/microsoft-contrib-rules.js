@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const config = require('../lib/microsoft-contrib-rules');
+const config = require('../../lib/microsoft-contrib-rules');
 const rules = config.rules;
 
 suite('microsoft-contrib-rules Suite:', () => {

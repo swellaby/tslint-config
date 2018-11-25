@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const utils = require('../lib/utils');
+const utils = require('../../lib/utils');
 
 suite('utils Suite:', () => {
     test('Should have correct value for always setting', () => {
