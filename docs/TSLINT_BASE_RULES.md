@@ -59,7 +59,6 @@ This [tslint][tslint-url] configuration module defines the below configuration f
     "no-unnecessary-initializer": true,
     "no-unsafe-finally": true,
     "no-unused-expression": true,
-    "no-unused-variable": true,
     "no-var-keyword": true,
     "object-literal-key-quotes": [
         false,
