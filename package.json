@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-microsoft-contrib": "^5.2.1"
+    "tslint-microsoft-contrib": "^6.0.0"
   },
   "peerDependencies": {
     "tslint": ">=4.0.0"
