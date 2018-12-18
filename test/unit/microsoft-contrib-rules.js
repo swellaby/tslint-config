@@ -33,7 +33,7 @@ suite('microsoft-contrib-rules Suite:', () => {
         const maxFuncLenRule = rules['max-func-body-length'];
         assert.isTrue(maxFuncLenRule[0]);
         assert.deepEqual(maxFuncLenRule[1], 30);
-        assert.deepEqual(maxFuncLenRule[2]['ignore-parameters-to-function-regex'], 'describe|suite');
+        assert.deepEqual(maxFuncLenRule[2]['ignore-parameters-to-function-regex'], 'describe|suite|context');
     });
 
     test('Should enable mocha-avoid-only rule', () => {
