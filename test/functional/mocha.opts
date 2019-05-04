@@ -1,6 +1,0 @@
---ui tdd
---slow 7500
---timeout 10000
--R mocha-multi
---reporter-options spec=-,xunit=.testresults/functional/xunit.xml
-./test/functional/*.js

@@ -39,15 +39,15 @@
   "devDependencies": {
     "@swellaby/eslint-config": "^1.1.6",
     "chai": "^4.2.0",
-    "eslint": "^5.9.0",
-    "mocha": "^6.0.0",
-    "mocha-multi": "^1.0.1",
-    "rimraf": "^2.6.2",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "mocha-multi-reporters": "^1.1.7",
+    "rimraf": "^2.6.3",
     "shelljs": "^0.8.3"
   },
   "dependencies": {
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-microsoft-contrib": "^6.0.0"
+    "tslint-microsoft-contrib": "^6.1.1"
   },
   "peerDependencies": {
     "tslint": ">=4.0.0"
@@ -56,7 +56,7 @@
     "build": "npm run lint && npm test",
     "lint": "eslint **/*.js",
     "pretest": "rimraf .testresults/unit",
-    "test": "mocha --opts test/unit/mocha.opts",
+    "test": "mocha --config test/unit/.mocharc.yml",
     "version:tagless": "npm --no-git-tag-version version patch",
     "prepublish:local": "npm run build && npm run version:tagless",
     "publish:local": "npm publish",
@@ -69,6 +69,6 @@
     "dev:setup": "npm i && npm run build",
     "test:functional:setup": "cd test/functional/fixtures && npm i",
     "pretest:functional": "rimraf .testresults/functional",
-    "test:functional": "mocha --opts test/functional/mocha.opts"
+    "test:functional": "mocha --config test/functional/.mocharc.yml"
   }
 }
