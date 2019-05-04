@@ -5,6 +5,7 @@
     "cyclomatic",
     "isnan",
     "preblock",
+    "mocharc",
     "msft",
     "multiline",
     "npmjs",
