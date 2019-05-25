@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/swellaby/tslint-config/",
   "devDependencies": {
-    "@swellaby/eslint-config": "^1.1.6",
+    "@swellaby/eslint-config": "^2.0.0",
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
     "mocha": "^6.1.4",
