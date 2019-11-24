@@ -22,6 +22,7 @@ This [tslint][tslint-url] configuration module defines the below configuration f
         10
     ],
     "deprecation": true,
+    "function-constructor": true,
     "import-spacing": true,
     "interface-over-type-literal": true,
     "jsdoc-format": true,
