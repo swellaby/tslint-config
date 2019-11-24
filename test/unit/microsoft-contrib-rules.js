@@ -96,10 +96,6 @@ suite('microsoft-contrib-rules Suite:', () => {
         assert.isTrue(rules['no-exec-script']);
     });
 
-    test('Should enable no-function-constructor-with-string-args rule', () => {
-        assert.isTrue(rules['no-function-constructor-with-string-args']);
-    });
-
     test('Should enable no-function-expression rule', () => {
         assert.isTrue(rules['no-function-expression']);
     });

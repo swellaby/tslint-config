@@ -59,6 +59,10 @@ suite('base Suite:', () => {
         assert.isTrue(rules.deprecation);
     });
 
+    test('Should enable function-constructor rule', () => {
+        assert.isTrue(rules['function-constructor']);
+    });
+
     test('Should enable import-spacing rule', () => {
         assert.isTrue(rules['import-spacing']);
     });
