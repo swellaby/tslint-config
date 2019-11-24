@@ -113,6 +113,7 @@ This [tslint][tslint-url] configuration module defines the below configuration f
         "allow-leading-underscore"
     ],
     "unified-signatures": true,
+    "unnecessary-bind": true,
     "use-isnan": true,
     "whitespace": [
         true,
