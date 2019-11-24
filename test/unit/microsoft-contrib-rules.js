@@ -96,10 +96,6 @@ suite('microsoft-contrib-rules Suite:', () => {
         assert.isTrue(rules['no-exec-script']);
     });
 
-    test('Should enable no-function-constructor-with-string-args rule', () => {
-        assert.isTrue(rules['no-function-constructor-with-string-args']);
-    });
-
     test('Should enable no-function-expression rule', () => {
         assert.isTrue(rules['no-function-expression']);
     });
@@ -132,10 +128,6 @@ suite('microsoft-contrib-rules Suite:', () => {
         assert.isTrue(rules['no-regex-spaces']);
     });
 
-    test('Should enable no-reserved-keywords rule', () => {
-        assert.isTrue(rules['no-reserved-keywords']);
-    });
-
     test('Should enable no-single-line-block-comment rule', () => {
         assert.isTrue(rules['no-single-line-block-comment']);
     });
@@ -154,10 +146,6 @@ suite('microsoft-contrib-rules Suite:', () => {
 
     test('Should enable no-typeof-undefined rule', () => {
         assert.isTrue(rules['no-typeof-undefined']);
-    });
-
-    test('Should enable no-unnecessary-bind rule', () => {
-        assert.isTrue(rules['no-unnecessary-bind']);
     });
 
     test('Should enable no-unnecessary-field-initialization rule', () => {

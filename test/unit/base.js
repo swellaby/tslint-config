@@ -59,6 +59,10 @@ suite('base Suite:', () => {
         assert.isTrue(rules.deprecation);
     });
 
+    test('Should enable function-constructor rule', () => {
+        assert.isTrue(rules['function-constructor']);
+    });
+
     test('Should enable import-spacing rule', () => {
         assert.isTrue(rules['import-spacing']);
     });
@@ -293,6 +297,10 @@ suite('base Suite:', () => {
         assert.isTrue(varNameRule.includes('check-format'));
         assert.isTrue(varNameRule.includes('ban-keywords'));
         assert.isTrue(varNameRule.includes('allow-leading-underscore'));
+    });
+
+    test('Should enable unnecessary-bind rule', () => {
+        assert.isTrue(rules['unnecessary-bind']);
     });
 
     test('Should enable unified-signatures rule', () => {
