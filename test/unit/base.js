@@ -299,6 +299,10 @@ suite('base Suite:', () => {
         assert.isTrue(varNameRule.includes('allow-leading-underscore'));
     });
 
+    test('Should enable unnecessary-bind rule', () => {
+        assert.isTrue(rules['unnecessary-bind']);
+    });
+
     test('Should enable unified-signatures rule', () => {
         assert.isTrue(rules['unified-signatures']);
     });
