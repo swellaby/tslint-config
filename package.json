@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/tslint-config",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Our tslint configurations",
   "license": "MIT",
   "main": "lib/index.js",
